@@ -51,6 +51,7 @@ if prompt := st.chat_input("Say something..."):
     if closest_answer:
         st.session_state.messages.append({"role": "assistant", "content": closest_answer})
         with st.chat_message("assistant"):
+           st.markdown(closest_answer)
     else:
         try:
             response=model.generate_content(prompt)
