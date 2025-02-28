@@ -5,8 +5,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 st.set_page_config(page_title="Svecw college chatbot",layout="centered")
- if "messages" not in st.session_state:
-    st.session_state.messages=[]
+if "messages" not in st.session_state:
+   st.session_state.messages=[]
 
 csv_url="svcew_details.csv"
 
